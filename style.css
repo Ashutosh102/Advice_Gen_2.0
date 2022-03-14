@@ -1,0 +1,140 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%); 
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--dark-blue);
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: var(--dark-grayish-blue);
+  border-radius: 15px;
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+  padding: 48px 48px 72px 48px;
+  position: relative;
+  text-align: center;
+  height: auto;
+  width: 38%;
+}
+
+main h1 {
+  color: var(--neon-green);
+  font-size: 1.3rem;
+  letter-spacing: 3.46px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+main p {
+  color: var(--light-cyan);
+  font-size: 2.8rem;
+  letter-spacing: -0.26px;
+  margin-bottom: 40px;
+}
+
+.divider {
+  width: 100%;
+}
+
+.randomize-btn {
+  background-color: var(--neon-green);
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: -32px;
+  left: 0;
+  text-align: center;
+  height: 64px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.randomize-btn:hover {
+  box-shadow: 0 0 40px -5px var(--neon-green);
+}
+
+.disabled {
+  box-shadow: none;
+  color: var(--grayish-blue);
+  cursor: not-allowed;
+  font-size: 1.6rem;
+  opacity: 0.4;
+}
+
+.disabled:hover {
+  box-shadow: none;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1300px) {
+  main {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  main {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 40px 24px 64px 24px;
+    width: 80%;
+  }
+
+  main h1 {
+    font-size: 1.1rem;
+  }
+
+  main p {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  main {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  main {
+    padding: 40px 16px 64px 16px;
+  }
+}

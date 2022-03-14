@@ -1,0 +1,21 @@
+.advice-id.is-loading {
+  background: linear-gradient(110deg, hsl(218, 23%, 16%) 8%, hsl(217, 19%, 24%) 18%, hsl(218, 23%, 16%) 33%);
+  border-radius: 10px;
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+  padding: 20px 30px;
+}
+
+.advice-content.is-loading {
+  background: linear-gradient(110deg, hsl(218, 23%, 16%) 8%, hsl(217, 19%, 24%) 18%, hsl(218, 23%, 16%) 33%);
+  border-radius: 10px;
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+  padding: 60px 20px;
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
